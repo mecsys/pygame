@@ -79,11 +79,11 @@ septagon'.split()}
 def getRandomWord(wordDict):
     # This function returns a random string from the passed list of strings.
     # First, randomly select a key from the dictionary:
-    wordkey = random.choice(list(wordDict.keys()))
+    wordKey = random.choice(list(wordDict.keys()))
 
     # Second, randomly select a word from the key's list in the dictionary:
-    wordIndex = random.randint(0, len(wordDict[wordkey]) - 1)
-    return [wordDict[wordkey][wordIndex], wordkey]
+    wordIndex = random.randint(0, len(wordDict[wordKey]) - 1)
+    return [wordDict[wordKey][wordIndex], wordKey]
 
 def displayBoard(HANGMANPICS, missedLetters, correctLetters, secretWord):
     print(HANGMANPICS[len(missedLetters)])
@@ -129,6 +129,8 @@ print('H A N G M A N')
 missedLetters = ''
 correctLetters = ''
 secretWord = getRandomWord(words)
+secretKey = secretWord[1]
+secretWord = secretWord[0]
 gameIsDone = False
 
 while True:
@@ -165,6 +167,8 @@ while True:
             correctLetters = ''
             gameIsDone = False
             secretWord = getRandomWord(words)
+            secretKey = secretKey[1]
+            secretWord = secretWord[0]
         else:
             break
 
