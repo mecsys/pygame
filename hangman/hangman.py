@@ -128,9 +128,7 @@ def playAgain():
 print('H A N G M A N')
 missedLetters = ''
 correctLetters = ''
-secretWord = getRandomWord(words)
-secretKey = secretWord[1]
-secretWord = secretWord[0]
+secretWord, secretKey = getRandomWord(words)
 gameIsDone = False
 
 while True:
@@ -166,9 +164,7 @@ while True:
             missedLetters = ''
             correctLetters = ''
             gameIsDone = False
-            secretWord = getRandomWord(words)
-            secretKey = secretKey[1]
-            secretWord = secretWord[0]
+            secretWord, secretKey = getRandomWord(words)
         else:
             break
 
