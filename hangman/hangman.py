@@ -56,13 +56,34 @@ HANGMANPICS = ['''
  /|\  |
  / \  |
       |
+=========''', '''
+  +---+
+  |   |
+ [O   |
+ /|\  |
+ / \  |
+      |
+=========''', '''
+  +---+
+  |   |
+ [O]  |
+ /|\  |
+ / \  |
+      |
 =========''']
-words = 'ant baboon badger bat bear beaver camel cat clam cobra cougar coyote crow deer dog donkey duck eagle ferret fox frog goat goose hawk lion lizard llama mole monkey moose mouse mule newt otter owl panda parrot pigeon python rabbit ram rat raven rhino salmon seal shark sheep skunk sloth snake spider stork swan tiger toad trout turkey turtle weasel whale wolf wombat zebra'.split()
+words = {'Color':'red orange yellow green blue indigo violet \
+white black brown'.split(),'Shapes':'square triangle rectangle \
+circle ellipse rhombus trapazoid chevron pentagon hexagon \
+septagon'.split()}
 
-def getRandomWord(wordList):
+def getRandomWord(wordDict):
     # This function returns a random string from the passed list of strings.
-    wordIndex = random.randint(0, len(wordList) - 1)
-    return wordList[wordIndex]
+    # First, randomly select a key from the dictionary:
+    wordkey = random.choice(list(wordDict.keys()))
+
+    # Second, randomly select a word from the key's list in the dictionary:
+    wordIndex = random.randint(0, len(wordDict[wordkey]) - 1)
+    return [wordDict[wordkey][wordIndex], wordkey]
 
 def displayBoard(HANGMANPICS, missedLetters, correctLetters, secretWord):
     print(HANGMANPICS[len(missedLetters)])
