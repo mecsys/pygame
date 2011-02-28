@@ -132,6 +132,7 @@ secretWord, secretKey = getRandomWord(words)
 gameIsDone = False
 
 while True:
+    print('The secret word is in the set: ' + secretKey)
     displayBoard(HANGMANPICS, missedLetters, correctLetters, secretWord)
 
     # Let the player type in a letter.
