@@ -1,3 +1,4 @@
 # Ignorar arquivos
 tags
 .nfs*
+.*.swap
