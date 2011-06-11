@@ -1,5 +1,5 @@
+#!/usr/bin/env python3
 # Caesar Cipher
-
 MAX_KEY_SIZE = 26
 
 def getMode():
