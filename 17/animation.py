@@ -1,3 +1,4 @@
+#!/usr/bin/env python3.2
 import pygame, sys, time
 from pygame.locals import *
 
