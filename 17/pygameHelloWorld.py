@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.2
+#!/usr/bin/env python
 import pygame, sys
 from pygame.locals import *
 
@@ -17,7 +17,7 @@ GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 
 # set up fonts
-basicFont = pygame.font.SysFont(None, 48)
+basicFont = pygame.font.SysFont("Corpse", 48)
 
 # set up the text
 text = basicFont.render('Hello world!', True, WHITE, BLUE)
