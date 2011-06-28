@@ -9,6 +9,8 @@ pygame.init()
 WINDOWWIDTH = 400
 WINDOWHEIGHT = 400
 windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), 0, 32)
+icon = pygame.image.load('/home/admlab/isaac/Pictures/mecsys.png')
+pygame.display.set_icon(icon)
 pygame.display.set_caption('Animation')
 
 # set up direction variables
