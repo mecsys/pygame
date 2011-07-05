@@ -9,7 +9,8 @@ mainClock = pygame.time.Clock()
 # set up the window
 WINDOWWIDTH = 400
 WINDOWHEIGHT = 400
-windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), 0, 32)
+windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), \
+pygame.HWSURFACE|pygame.DOUBLEBUF|pygame.FULLSCREEN, 32)
 pygame.display.set_caption('Input')
 
 # set up the colors
