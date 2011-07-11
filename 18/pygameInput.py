@@ -7,10 +7,16 @@ pygame.init()
 mainClock = pygame.time.Clock()
 
 # set up the window
+<<<<<<< HEAD
 WINDOWWIDTH = 400
 WINDOWHEIGHT = 400
 windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), \
 pygame.HWSURFACE|pygame.DOUBLEBUF|pygame.FULLSCREEN, 32)
+=======
+WINDOWWIDTH = 640
+WINDOWHEIGHT = 480
+windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), 0, 32)
+>>>>>>> 6a3969eebf0b1ea1e163fd782cede3cfa8a75dcb
 pygame.display.set_caption('Input')
 
 # set up the colors
@@ -45,29 +51,29 @@ while True:
             sys.exit()
         if event.type == KEYDOWN:
             # change the keyboard variables
-            if event.key == K_LEFT or event.key == ord('a'):
+            if event.key == K_LEFT or event.key == ord('a') or event.key == K_KP4:
                 moveRight = False
                 moveLeft = True
-            if event.key == K_RIGHT or event.key == ord('d'):
+            if event.key == K_RIGHT or event.key == ord('d') or event.key == K_KP6:
                 moveLeft = False
                 moveRight = True
-            if event.key == K_UP or event.key == ord('w'):
+            if event.key == K_UP or event.key == ord('w') or event.key == K_KP8:
                 moveDown = False
                 moveUp = True
-            if event.key == K_DOWN or event.key == ord('s'):
+            if event.key == K_DOWN or event.key == ord('s') or event.key == K_KP2:
                 moveUp = False
                 moveDown = True
         if event.type == KEYUP:
             if event.key == K_ESCAPE:
                 pygame.quit()
                 sys.exit()
-            if event.key == K_LEFT or event.key == ord('a'):
+            if event.key == K_LEFT or event.key == ord('a'): or event.key == K_KP4:
                 moveLeft = False
-            if event.key == K_RIGHT or event.key == ord('d'):
+            if event.key == K_RIGHT or event.key == ord('d') or event.key == K_KP6:
                 moveRight = False
-            if event.key == K_UP or event.key == ord('w'):
+            if event.key == K_UP or event.key == ord('w') or event.key == K_KP8:
                 moveUp = False
-            if event.key == K_DOWN or event.key == ord('s'):
+            if event.key == K_DOWN or event.key == ord('s') or event.key == K_KP2:
                 moveDown = False
             if event.key == ord('x'):
                 player.top = random.randint(0, WINDOWHEIGHT - player.height)
