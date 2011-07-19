@@ -2,8 +2,8 @@
 import pygame, random, sys
 from pygame.locals import *
 
-WINDOWWIDTH = 800
-WINDOWHEIGHT = 600
+WINDOWWIDTH = 640
+WINDOWHEIGHT = 480
 TEXTCOLOR = (255, 255, 255)
 BACKGROUNDCOLOR = (0, 0, 0)
 FPS = 40
@@ -43,8 +43,7 @@ def drawText(text, font, surface, x, y):
 # set up pygame, the window, and the mouse cursor
 pygame.init()
 mainClock = pygame.time.Clock()
-windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT),\
-pygame.FULLSCREEN|pygame.HWSURFACE|pygame.DOUBLEBUF, 32)
+windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
 pygame.display.set_caption('Dodger')
 pygame.mouse.set_visible(False)
 
@@ -59,6 +58,7 @@ pygame.mixer.music.load('background.mid')
 playerImage = pygame.image.load('player.png')
 playerRect = playerImage.get_rect()
 baddieImage = pygame.image.load('baddie.png')
+bg = pygame.image.load('background.gif')
 
 # show the "Start" screen
 drawText('Dodger', font, windowSurface, (WINDOWWIDTH / 3), (WINDOWHEIGHT / 3))
@@ -167,11 +167,13 @@ while True:
                 baddies.remove(b)
 
         # Draw the game world on the window.
-        windowSurface.fill(BACKGROUNDCOLOR)
+#        windowSurface.fill(BACKGROUNDCOLOR)
+        backg = pygame.Surface((640,480))
+        for x in range(0, 640, bg.get_width()):
+                windowSurface.blit(bg, (x, 0))
+#        windowSurface.blit(backg, (0,0))
+#        pygame.display.flip()
 
-        # Draw the score and top score.
-        drawText('Score: %s' % (score), font, windowSurface, 10, 0)
-        drawText('Top Score: %s' % (topScore), font, windowSurface, 10, 40)
 
         # Draw the player's rectangle
         windowSurface.blit(playerImage, playerRect)
@@ -179,6 +181,10 @@ while True:
         # Draw each baddie
         for b in baddies:
             windowSurface.blit(b['surface'], b['rect'])
+
+        # Draw the score and top score.
+        drawText('Score: %s' % (score), font, windowSurface, 10, 0)
+        drawText('Top Score: %s' % (topScore), font, windowSurface, 10, 40)
 
         pygame.display.update()
 
