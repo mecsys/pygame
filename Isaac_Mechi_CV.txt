@@ -1,0 +1,59 @@
+Curriculum Vitae
+ISAAC MECHI
+
+Endereço:
+
+Rua Amália Forti Poli, no 483 – Jd. Do Lago II Continuaçã
+CEP 13051-059 Campinas - SP
+
+Dados Pessoais:
+
+Idade: 26
+Sexo: Masculino
+Data de Nascimento: 22/03/1985 
+Local Nascimento: Osasco - SP 
+Nacionalidade: Brasileiro 
+Estado Civil: Solteiro 
+Fone: (19) 3229-4166 / 8849-9227 
+E-mail: isaacmechi@gmail.com
+
+Educação:
+
+2/2008–12/2011 (Término previsto) Faculdade Anhanguera de Campinas - Unidade IV 
+Bacharelado em Ciência da Computação
+
+Cursos:
+
+• Cursando Inglês Pre Intermediate I - Centro Cultural Brasil Estados Unidos Campinas - Unidade Cambuí
+• Soluções Coorporativa em TI Sistemas Distribuíıdos e Arquitetura Mainframe: Básico (120 horas) – Instituto Eldorado.
+• Soluções Coorporativa em TI Conceitos e Fundamentos (30 horas) – Insco tituto Eldorado. • Curso Linux Básico e Avançado (40 Horas) – Instituto de Computação.
+• Curso De Redes (20 Horas) – Instituto de Computação.
+• Curso de Fundamentos de Rede (20 Horas) – Fundação Bradesco.
+• Curso de Html (37 Horas) – Fundação Bradesco.
+• Curso de Montagem e Manutenção de Microcomputador – Senai Amoreiras.
+
+Experiência Profissional:
+
+Desde 07/2010 Função: Estagiário Suporte Técnico 
+Empresa : Instituto de Computação - Unicamp
+Atividades : Suporte técnico a usuários em ambientes MS-Windows e GNU/Linux, administração de redes e alguns servidores em ambiente GNU/Linux.
+
+01/2010–06/2010 Função: Estagiário Informática
+Empresa : Archivum Comercial LTDA 
+Atividades : Digitalização de documentos. Escolhas de ca conﬁgurações e formatos de mıdia digital para documentos a serem digitalizados. 
+
+05/2007–07/2009 Função: Teleoperador
+Empresa : Atento do Brasil 
+Atividades : Atendimento aos clientes Telefônica e suporte o Speedy. 
+
+09/2004–12/2006 Função: Separador de Peças
+Empresa : Furacao Distribupídora de Peças Automotivas LTDA
+Atividades : Acompanhar pedidos de clientes, estoque, saldo de pe¸as. Trabalho em modo de produção com acompanhamento de supervisor.
+
+Areas de Conhecimento:
+
+Algumas áreas em que possuo conhecimentos.
+
+• Sistemas Operacionais GNU/Linux (Redhat, Debian), MS-Windows (XP, Windows 7); Servidor http Apache; Acompanhamento de logs. 
+• Linguagens de Programa¸˜o C, Java, Python, PHP, Shel script, SQL.
+
