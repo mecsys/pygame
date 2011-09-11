@@ -7,15 +7,10 @@ pygame.init()
 mainClock = pygame.time.Clock()
 
 # set up the window
-WINDOWWIDTH = 400
-WINDOWHEIGHT = 400
-windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), \
-pygame.HWSURFACE|pygame.DOUBLEBUF|pygame.FULLSCREEN, 32)
-
 WINDOWWIDTH = 640
 WINDOWHEIGHT = 480
 windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), 0, 32)
-pygame.display.set_caption('Input')
+pygame.display.set_caption('Matematica Legal')
 
 # set up the colors
 BLACK = (0, 0, 0)
@@ -28,8 +23,8 @@ NEWFOOD = 40
 FOODSIZE = 20
 player = pygame.Rect(300, 100, 50, 50)
 foods = []
-for i in range(20):
-    foods.append(pygame.Rect(random.randint(0, WINDOWWIDTH - FOODSIZE), random.randint(0, WINDOWHEIGHT - FOODSIZE), FOODSIZE, FOODSIZE))
+#for i in range(20):
+#    foods.append(pygame.Rect(random.randint(0, WINDOWWIDTH - FOODSIZE), random.randint(0, WINDOWHEIGHT - FOODSIZE), FOODSIZE, FOODSIZE))
 
 # set up movement variables
 moveLeft = False
@@ -80,7 +75,7 @@ while True:
         if event.type == MOUSEBUTTONUP:
             foods.append(pygame.Rect(event.pos[0], event.pos[1], FOODSIZE, FOODSIZE))
 
-    foodCounter += 1
+    #foodCounter += 1
     if foodCounter >= NEWFOOD:
         # add new food
         foodCounter = 0
