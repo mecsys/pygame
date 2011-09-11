@@ -7,16 +7,14 @@ pygame.init()
 mainClock = pygame.time.Clock()
 
 # set up the window
-<<<<<<< HEAD
 WINDOWWIDTH = 400
 WINDOWHEIGHT = 400
 windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), \
 pygame.HWSURFACE|pygame.DOUBLEBUF|pygame.FULLSCREEN, 32)
-=======
+
 WINDOWWIDTH = 640
 WINDOWHEIGHT = 480
 windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT), 0, 32)
->>>>>>> 6a3969eebf0b1ea1e163fd782cede3cfa8a75dcb
 pygame.display.set_caption('Input')
 
 # set up the colors
@@ -67,7 +65,7 @@ while True:
             if event.key == K_ESCAPE:
                 pygame.quit()
                 sys.exit()
-            if event.key == K_LEFT or event.key == ord('a'): or event.key == K_KP4:
+            if event.key == K_LEFT or event.key == ord('a') or event.key == K_KP4:
                 moveLeft = False
             if event.key == K_RIGHT or event.key == ord('d') or event.key == K_KP6:
                 moveRight = False
