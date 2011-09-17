@@ -23,7 +23,7 @@ BLUE = (0, 0, 255)
 RED = (255, 0, 0)
 YELLOW = (0, 255, 255)
 
-font = pygame.font.SysFont(None, 48)
+font = pygame.font.SysFont('Arial', 48)
 
 
 #pygame.draw.rect(windowSurface, (255,0,0), (textRect.left - 20, textRect.top - 20, textRect.width + 40, textRect.height + 40))
