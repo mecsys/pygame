@@ -158,7 +158,7 @@ def init_screen_2():
     desafio.append({'num':t, 'textrect':y})
     pygame.draw.rect(windowSurface, WHITE, (y.left - 10, y.top - 10, y.width + 20, y.height + 20))
     windowSurface.blit(x,y)
-    pygame.display.update()
+    #pygame.display.update()
     
     
 
@@ -166,14 +166,14 @@ def init_screen_2():
     desafio.append({'num':t, 'textrect':y})
     pygame.draw.rect(windowSurface, WHITE, (y.left - 10, y.top - 10, y.width + 20, y.height + 20))
     windowSurface.blit(x,y)
-    pygame.display.update()
+    #pygame.display.update()
     
 
     x, y, t = drawText('11', font, windowSurface, 350, 350, RED, WHITE)
     desafio.append({'num':t, 'textrect':y})
     pygame.draw.rect(windowSurface, WHITE, (y.left - 10, y.top - 10, y.width + 20, y.height + 20))
     windowSurface.blit(x,y)
-    pygame.display.update()
+    #pygame.display.update()
     
 
 
@@ -274,4 +274,4 @@ while True:
    
     # draw the window onto the screen
     pygame.display.update()
-    mainClock.tick(10)
+    mainClock.tick(40)

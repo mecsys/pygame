@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import pygame, random, sys
 from pygame.locals import *
 
